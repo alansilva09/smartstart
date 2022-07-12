@@ -1,0 +1,137 @@
+.intro-bg {
+  background: #eef8ed;
+  box-shadow: inset 0 -120px #ffffff;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+
+.intro img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro-conteudo {
+  align-self: center;
+}
+
+.intro-conteudo h1 {
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 58px;
+  line-height: 80px;
+  color: #252b42;
+}
+
+.intro-conteudo p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.intro-botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.intro-botao {
+  padding: 15px 25px;
+  background: #96bb7c;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.intro-botao:hover {
+  background: #8fc569;
+}
+
+.intro-botao-2 {
+  padding: 15px 25px;
+  border: 2px solid #96bb7c;
+  border-radius: 5px;
+  color: #96bb7c;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.intro-botao-2:hover {
+  color: #8fc569;
+  border: 2px solid #8fc569;
+}
+
+.info-cursos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.info-cursos-item {
+  padding: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.info-cursos-item img,
+.info-cursos-item h3 {
+  margin-bottom: 30px;
+}
+
+.info-cursos-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #252b42;
+}
+
+.info-cursos-item p {
+  position: relative;
+}
+
+.info-cursos-item p::before {
+  content: "";
+  width: 50px;
+  height: 3px;
+  left: 0px;
+  top: -20px;
+  background: #e74040;
+  position: absolute;
+}
+
+@media (max-width: 860px)  {
+  .intro-bg {
+    box-shadow: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .intro h1 {
+    line-height: 1;
+  }
+
+  .intro-botoes {
+    justify-content: center;
+  }
+
+  .intro img {
+    display: none;
+  }
+  .info-cursos-item {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 620px) {
+  .info-cursos {
+    grid-template-columns: 1fr;
+  }
+}

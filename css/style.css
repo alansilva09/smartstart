@@ -1,0 +1,15 @@
+@import './reset.css';
+
+@import './home/header.css';
+
+@import './home/intro.css';
+
+@import './home/articles.css';
+
+@import './home/cursos.css';
+
+@import './home/depoimentos.css';
+
+@import './home/contato.css';
+
+@import './home/footer.css';

@@ -1,0 +1,41 @@
+.testemonials-bg {
+  background: #cfe4e7;
+  padding: 100px;
+}
+
+.testemonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  text-align: center;
+}
+
+.testemonials-item {
+  display: grid;
+  justify-items: center;
+}
+
+.testemonials-item img {
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.stars {
+  color: #ffce31;
+}
+
+.testemonials-item h5 {
+  color: #252b42;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.sub-designer {
+  font-weight: 700;
+}
+
+@media (max-width: 860px) {
+  .testemonials {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,124 @@
+.cursos {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.cursos h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #252b42;
+  position: relative;
+}
+
+.cursos h2::before {
+  content: "";
+  width: 100px;
+  height: 7px;
+  left: 0px;
+  top: -20px;
+  background: #e74040;
+  position: absolute;
+}
+
+.cursos p {
+  margin-bottom: 40px;
+}
+
+.cursos-conteudo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.cursos-detalhes {
+  position: relative;
+}
+
+.cursos-detalhes::before {
+  content: "Sale";
+  padding: 5px 10px;
+  border-radius: 5px;
+  left: 15px;
+  top: 15px;
+  background: #e74040;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+}
+
+.cursos-detalhes img {
+  width: 100%;
+}
+
+.cursos-p {
+  color: #96bb7c;
+  font-weight: 700;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cursos-p .nota {
+  background: #2d4059;
+  padding: 5px 10px;
+  color: #ffce31;
+  border-radius: 20px;
+}
+
+.nota-numero {
+  color: #ffffff;
+}
+
+.cursos-detalhes h5 {
+  color: #252b42;
+  font-size: 18px;
+}
+
+.sales {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.sales::before {
+  content: url('../../img/icones/sales.svg');
+  padding-right: 8px;
+}
+
+.old-price {
+  font-weight: 700;
+  color: #bdbdbd;
+  display: block;
+}
+
+.new-price {
+  font-weight: 700;
+  color: #ffab71;
+}
+
+.cursos-botao {
+  display: inline-block;
+  margin-top: 30px;
+  font-weight: 700;
+  color: #96bb7c;
+  border: 1px solid #96bb7c;
+  border-radius: 35px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 860px) {
+  .cursos-conteudo {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .cursos-conteudo {
+    grid-template-columns: 1fr;
+  }
+}

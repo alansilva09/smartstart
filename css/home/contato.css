@@ -1,0 +1,57 @@
+.contact-bg {
+  background: #fff2f3;
+}
+
+.contact-container {
+  padding: 200px;
+  text-align: center;
+}
+
+.contact-news {
+  font-weight: 700;
+  color: #96bb7c;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  font-size: 24px;
+  color: #252b42;
+  margin-bottom: 10px;
+}
+
+.contact-p {
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form label {
+  display: none;
+}
+
+form input {
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  background: #f1f0f0;
+  border: 2px solid #e6e6e6;
+  border-radius: 5px 0 0 5px;
+  width: 300px;
+}
+
+form input:focus {
+  outline: none;
+  background: #ffffff;
+}
+
+form button {
+  color: #ffffff;
+  background: #96bb7c;
+  border: 2px solid #e6e6e6;
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+  cursor: pointer;
+  width: 100px;
+}

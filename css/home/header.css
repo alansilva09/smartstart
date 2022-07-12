@@ -1,0 +1,158 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header img {
+  min-width: max-content;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-menu a,
+.header-login {
+  display: inline-block;
+  padding: 16px 0px;
+  color: #737373;
+  font-weight: bold;
+  position: relative;
+}
+
+.header-menu a::after,
+.header-login::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0px;
+  background: #737373;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover::after,
+.header-login:hover::after {
+  width: 100%;
+}
+
+.header-menu-user {
+  display: flex;
+  gap: 45px;
+}
+
+.header-login {
+  color: #96bb7c;
+}
+
+.header-login::after {
+  background: #96bb7c;
+}
+
+.header-botao {
+  padding: 15px 25px;
+  background: #96bb7c;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.header-botao:hover {
+  background: #8fc569;
+}
+
+.header-botao.seta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(../../img/icones/seta.svg);
+  transition: 0.2s;
+}
+
+.header-botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
+@media (max-width: 860px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .header-menu,
+  .header-menu-user {
+    gap: 20px;
+  }
+
+  .header-menu a {
+    background: #ededed;
+    padding: 12px 16px;
+    border-radius: 5px;
+  }
+
+  .header-menu a:hover {
+    background: #dedede;
+  }
+
+  .header a::after {
+    display: none;
+  }
+  
+  .header-login {
+    text-align: center;
+  }
+  
+  .header-login, 
+  .header-botao {
+    padding: 12px 16px;
+    background: #96bb7c;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .header-login:hover,
+  .header-botao:hover {
+    background: #8fc569;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu,
+  .header-menu-user {
+    gap: 12px;
+  }
+
+  .header-menu,
+  .header-menu-user {
+    padding: 0px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-menu {
+    justify-content: center;
+  }
+}
